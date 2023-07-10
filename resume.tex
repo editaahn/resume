@@ -6,7 +6,6 @@
 %------------------------
 
 \documentclass[letterpaper,10pt]{article}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,12 +17,12 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
 
 
 %----------FONT OPTIONS----------
 % sans-serif
-% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault,light]{merriweather}
+% \usepackage[sfdefault, light]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
@@ -58,7 +57,6 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -69,7 +67,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -106,7 +104,7 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Ei-gyoung Ahn} \\ \vspace{1pt}
+    \textbf{\Huge Ei-gyoung Ahn} \\ \vspace{1pt}
     \small +82 010-9213-7406 $|$ \href{mailto:x@x.com}{\underline{editaahn@yahoo.com}} $|$ 
     \href{https://linkedin.com/in/rita-ahn}{\underline{linkedin.com/in/rita-ahn}} $|$
     \href{https://rita-blog.vercel.app}{\underline{rita-blog.vercel.app}}
@@ -124,16 +122,16 @@
         \resumeSubSubheading{{Crafting Engaging Features} $|$ \emph{TypeScript, React, Next.js, Apollo Client and Server, StoryBook, Jest}}
 
           \resumeItemListStart
-            \resumeItem{Collaborated closely with product managers and designers, developing new pages and features to foster an exceptional user experience}
+            \resumeItem{Collaborated closely with product managers and designers, developing new features and conducting A/B tests to foster an exceptional user experience}
             \resumeItem{Developed reusable voting, video, modal and animation components for promotional activities, attracting new users}
-            \resumeItem{Contributed to the development and maintenance of internal UI system components (calendar, tooltip, scroll detector, …)}
+            \resumeItem{Contributed to the development and maintenance of internal UI system components (calendar,tooltip,scroll detector,…)}
           \resumeItemListEnd
 
         \resumeSubSubheading{{Enhancing Website Performance} $|$ \emph{CloudFront, Datadog, MongoDB, Redis, Apollo Client and Server}}
 
           \resumeItemListStart
             \resumeItem{Achieved a 75\% faster loading time by subsetting fonts, using Python fonttools}
-            \resumeItem{Optimized queries and mutations by enhancing the efficiency of database search operations, resulting in up to 80\% faster performance}
+            \resumeItem{Obtained up to an 80\% faster performance for the `Like' interaction through enhancing database search operations}
             \resumeItem{Achieved a 13\% reduction in response latency for queries in the main page by implementing a Content Delivery Network(CDN) and integrating Apollo Persisted Query(APQ) for effective caching}
             \resumeItem{Reduced video loading time, improving Largest Contentful Paint(LCP) of a promotion page to 3-4 seconds from 6 seconds}
           \resumeItemListEnd
@@ -152,12 +150,12 @@
       {Woowa Brothers; Baemin Restaurant Supply}{Product Manager}
       {{Online mart selling packaging products and groceries for food delivery} $|$ \href{https://mart.baemin.com/}{\underline{website}}}{December 2018 -- October 2020}
 
-        \resumeSubSubheading{Streamlining Products and Managing Projects}
+        \resumeSubSubheading{Structuring Products and Managing Projects}
 
           \resumeItemListStart
-            \resumeItem{Structured a risk management system, reducing customer inquiries by 50\%}
-            \resumeItem{Developed an SKU in-out management system, significantly increasing productivity and saving 2 hours of manual operating time per person}
-            \resumeItem{Streamlined and digitized B2B ordering and shipping process for the online mall}
+            \resumeItem{Structured a shipping risk management system, reducing customer inquiries about shipping by 50\%}
+            \resumeItem{Developed an SKU in-out management system, significantly increasing productivity and saving 2 hours of manual operating time per person per day}
+            \resumeItem{Established a livestock distribution history preservation and reporting system, which not only saved 8 hours of manual operating time per week but also enhanced data security and reinforced risk management}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -166,11 +164,10 @@
     \resumeSubheading
       {E-motion}{Product Manager}
       {{Consulting and design agency for online services} $|$ \href{https://www.emotion.co.kr/}{\underline{website}}}{June 2016 -- December 2018}
-        \resumeSubSubheading{Optimizing User Experience}
+        \resumeSubSubheading{Providing UX Consulting to Client Companies}
         
           \resumeItemListStart
-            \resumeItem{Enhanced key performance indicators such as Click-Through Rate(CTR) and Conversion Rate}
-            \resumeItem{Provided UX consulting and design services to client companies}
+            \resumeItem{Took on a significant role in the renovation of the order process of T Direct Shop, the online mall of SKT, a leading Korean mobile carrier, overseeing UX consulting, project management, and leading tests}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd
@@ -179,10 +176,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript, TypeScript, HTML5, CSS3} \\
+     \textbf{Languages}{: JavaScript, TypeScript, HTML5, CSS3, GraphQL} \\
      \textbf{Frameworks and Libraries}{: React, Next.js, Apollo Client and Server, Jest, Storybook, CSS in JS
 } \\
-     \textbf{Client-side Skills}{: Web API, SEO, Caching techniques across various methods (browser, Redis, CloudFront, Apollo Client, APQ of Apollo Server), Interaction design (CSS animation, HTML5 Canvas, Framer, Lottie)
+     \textbf{Client-side Skills}{: Web API, SEO, Caching techniques across various methods (browser, Redis, CloudFront, Apollo Client, APQ of Apollo Server), Interaction design (CSS animation, HTML5 Canvas, Framer, Lottie), A/B testing (Optimizely, Hackle)
 } \\
      \textbf{Backend Skills}{: MongoDB, MySQL, AWS S3, CloudFront, Route53}
     }}
